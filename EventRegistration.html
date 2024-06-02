@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+</head>
+<body>
+    <form>
+
+        <fieldset>
+            <legend>Event Registration Form</legend>
+
+            <div>
+                <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            </div>
+<br>
+            <div>
+                <label for="EmailId">Email ID:</label>
+            <input type="text" id="EmailId" name="EmailId">
+            </div>
+<br>
+
+            <div>
+                <label for="phone">
+                    Enter your phone number:
+                    <small>+91</small>
+                  </label>
+                                 
+                  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+            </div>
+            <br>
+
+            <div>
+                <label for="occupationType">Occupation Type:</label>
+                <select name="occupationType" id="occupationType">
+                    <option value="Select">Select</option>
+                    <option value="Student">Student</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+<br>
+            <fieldset>
+                <legend>Topics of Interests</legend>
+                <div>
+                    <input type="checkbox" name="Lang" id="HTML" value="HTML">
+                    <label for="HTML">HTML</label>
+                </div>
+            
+                <div>
+                    <input type="checkbox" name="Lang" id="CSS" value="CSS">
+                    <label for="CSS">CSS</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Lang" id="JavaScript" value="JavaScript">
+                    <label for="JavaScript">JavaScript</label>
+                </div>
+            </fieldset>
+
+            <br>
+            <label for="textarea1">Comments:</label>
+            <br>
+            <textarea name="textarea1" id="textarea1" cols="30" rows="10"></textarea>
+
+            <br>
+             <br>
+             <button>Click Here to Register</button>
+
+        </fieldset>
+    </form>
+</body>
+</html>
